@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9bc70d7.css",
-    "main.js": "/static/js/main.e73b77a3.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/Computer_Work.gif": "/static/media/Computer_Work.1bcc75c0719b1811fe4f.gif",
-    "static/media/mcmaster.png": "/static/media/mcmaster.c1029a58e86f8994fb8f.png",
-    "static/media/computer-work-41x.svg": "/static/media/computer-work-41x.01e931d746f413980b0477cc352aa661.svg",
-    "static/media/waterloo.jpg": "/static/media/waterloo.038963c325b86a09045b.jpg",
-    "static/media/toronto.png": "/static/media/toronto.0521648f42cfa507d28f.png",
-    "static/media/character-0471x.svg": "/static/media/character-0471x.c14dac16b177e972034fad14017cce57.svg",
-    "static/media/group-communication96x961x-2.svg": "/static/media/group-communication96x961x-2.1aee27d8ac6e2603d02b8f106c9b9b24.svg",
-    "static/media/calculator96x961x-2.svg": "/static/media/calculator96x961x-2.2c228be8e861b5bbcd9f311b8e75d62d.svg",
-    "static/media/laptop-296x961x.svg": "/static/media/laptop-296x961x.9472ad0537a69b009506845caccbb904.svg",
-    "index.html": "/index.html",
-    "main.d9bc70d7.css.map": "/static/css/main.d9bc70d7.css.map",
-    "main.e73b77a3.js.map": "/static/js/main.e73b77a3.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/Tutoring-Website/static/css/main.d9bc70d7.css",
+    "main.js": "/Tutoring-Website/static/js/main.36082e49.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Tutoring-Website/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Computer_Work.gif": "/Tutoring-Website/static/media/Computer_Work.1bcc75c0719b1811fe4f.gif",
+    "static/media/mcmaster.png": "/Tutoring-Website/static/media/mcmaster.c1029a58e86f8994fb8f.png",
+    "static/media/computer-work-41x.svg": "/Tutoring-Website/static/media/computer-work-41x.01e931d746f413980b0477cc352aa661.svg",
+    "static/media/waterloo.jpg": "/Tutoring-Website/static/media/waterloo.038963c325b86a09045b.jpg",
+    "static/media/toronto.png": "/Tutoring-Website/static/media/toronto.0521648f42cfa507d28f.png",
+    "static/media/character-0471x.svg": "/Tutoring-Website/static/media/character-0471x.c14dac16b177e972034fad14017cce57.svg",
+    "static/media/group-communication96x961x-2.svg": "/Tutoring-Website/static/media/group-communication96x961x-2.1aee27d8ac6e2603d02b8f106c9b9b24.svg",
+    "static/media/calculator96x961x-2.svg": "/Tutoring-Website/static/media/calculator96x961x-2.2c228be8e861b5bbcd9f311b8e75d62d.svg",
+    "static/media/laptop-296x961x.svg": "/Tutoring-Website/static/media/laptop-296x961x.9472ad0537a69b009506845caccbb904.svg",
+    "index.html": "/Tutoring-Website/index.html",
+    "main.d9bc70d7.css.map": "/Tutoring-Website/static/css/main.d9bc70d7.css.map",
+    "main.36082e49.js.map": "/Tutoring-Website/static/js/main.36082e49.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Tutoring-Website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9bc70d7.css",
-    "static/js/main.e73b77a3.js"
+    "static/js/main.36082e49.js"
   ]
 }
