@@ -33,7 +33,7 @@ const FAQ = () => {
         <p>You can pay for tutoring using a credit card. We accept Visa, MasterCard, etransfer, and American Express.</p>
         <br />
         <h2>How do I cancel my tutoring?</h2>
-        <p>You can cancel your tutoring at any time. We will apply a fee if the tutoring is cancelled less than 24 hours before the session. Please contact us at <a href="mailto">mattstarai_@hotmail.com</a>.</p>
+        <p>You can cancel your tutoring at any time. We will apply a fee if the tutoring is cancelled less than 24 hours before the session. Please contact us at <a href="mailto">matt_starai@hotmail.com</a>.</p>
         <br />
         <h2>How do I contact you?</h2>
         <p>Please click the Schedule a Session button and fill in your information. We will then email you for further correspondance. We will be happy to set up a time to meet and discuss your needs. If you have specific concerns, please email us at <a href="mailto">mattstarai_@hotmail</a>.</p>

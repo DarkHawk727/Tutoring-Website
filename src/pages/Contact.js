@@ -16,7 +16,7 @@ const Contact = () => {
     const handleSubmit = () => {
         var emailBody = "Student Name: " + name + "%0A" + "Student Email: " + email + "%0A" + "Grade: " + grade + "%0A" + "Student Phone Number: " + phoneNumber + "%0A" + "Referrer: " + referral + "%0A" + "Subject(s): " + subject + "%0A" + "Additional Information: " + additionalInformation + "%0A" + "Parent Name: " + parentName + "%0A" + "Parent Email: " + parentEmail + "%0A" + "Parent Phone Number: " + parentPhoneNumber;
         var mail = document.createElement("a");
-        mail.href = "mailto:mattstarai_@hotmail.com?subject=Tutoring Request Form&body=" + "PLEASE ATTATCH ANY RESOURCES PERTAINING TO YOUR COURSES TO THIS EMAIL!" + "%0A %0A" + emailBody;
+        mail.href = "mailto:matt_starai@hotmail.com?subject=Tutoring Request Form&body=" + "PLEASE ATTATCH ANY RESOURCES PERTAINING TO YOUR COURSES TO THIS EMAIL!" + "%0A %0A" + emailBody;
         mail.click();
 
       }

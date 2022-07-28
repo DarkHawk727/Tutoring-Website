@@ -34,7 +34,7 @@ const Jobs = () => {
         + "%0A %0A %0A";
 
         var mail = document.createElement("a");
-        mail.href = "mailto:mattstarai_@hotmail.com?subject=Tutoring Job Application Form&body=" + emailForm;
+        mail.href = "mailto:matt_starai@hotmail.com?subject=Tutoring Job Application Form&body=" + emailForm;
         mail.click();
 
       }

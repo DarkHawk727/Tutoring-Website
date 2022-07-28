@@ -49,7 +49,7 @@ const Navbar = () => {
             <hr className="navbar-divider">
             </hr>
             <a className="navbar-item">
-            <a href="mailto:your@email.com">Report an Issue</a>
+            <a href="mailto:matt_starai@hotmail.com">Report an Issue</a>
             </a>
           </div>
         </div>
