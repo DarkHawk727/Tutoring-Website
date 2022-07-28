@@ -6,6 +6,7 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [grade, setGrade] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [referral, setReferral] = useState("");
     const [subject, setSubject] = useState("");
     const [additionalInformation, setAdditionalInformation] = useState("");
     const [parentName, setparentName] = useState("");
@@ -13,9 +14,9 @@ const Contact = () => {
     const [parentPhoneNumber, setparentPhoneNumber] = useState("");
 
     const handleSubmit = () => {
-        var emailBody = "Student Name: " + name + "%0A" + "Student Email: " + email + "%0A" + "Grade: " + grade + "%0A" + "Student Phone Number: " + phoneNumber + "%0A" + "Subject(s): " + subject + "%0A" + "Additional Information: " + additionalInformation + "%0A" + "Parent Name: " + parentName + "%0A" + "Parent Email: " + parentEmail + "%0A" + "Parent Phone Number: " + parentPhoneNumber;
+        var emailBody = "Student Name: " + name + "%0A" + "Student Email: " + email + "%0A" + "Grade: " + grade + "%0A" + "Student Phone Number: " + phoneNumber + "%0A" + "Referrer: " + referral + "%0A" + "Subject(s): " + subject + "%0A" + "Additional Information: " + additionalInformation + "%0A" + "Parent Name: " + parentName + "%0A" + "Parent Email: " + parentEmail + "%0A" + "Parent Phone Number: " + parentPhoneNumber;
         var mail = document.createElement("a");
-        mail.href = "mailto:arjunsarao727@gmail.com?subject=Tutoring Request Form&body=" + "PLEASE ATTATCH ANY RESOURCES PERTAINING TO YOUR COURSES TO THIS EMAIL!" + "%0A" + emailBody;
+        mail.href = "mailto:mattstarai_@hotmail.com?subject=Tutoring Request Form&body=" + "PLEASE ATTATCH ANY RESOURCES PERTAINING TO YOUR COURSES TO THIS EMAIL!" + "%0A %0A" + emailBody;
         mail.click();
 
       }
@@ -23,6 +24,9 @@ const Contact = () => {
   return (
     <div className='m-3'>
         <h1 class="title ">Schedule a Session</h1>
+        <p>
+            This form will lead to an email being sent to Matt Starai Tutoring.
+        </p>
         <h2>Student Information</h2>
         <form>
             <div className="field is-horizontal">
@@ -64,19 +68,12 @@ const Contact = () => {
             </div>
             <div className="field is-horizontal">
                 <div className="field-label">
-                    <label className="label">Have you been referred?</label>
+                    <label className="label">If you have been referred, please indicate who: </label>
                 </div>
                 <div className="field-body">
                     <div className="field is-narrow">
                         <div className="control">
-                            <label className="radio">
-                            <input type="radio" name="member"></input>
-                            Yes
-                            </label>
-                            <label className="radio">
-                            <input type="radio" name="member"></input>
-                            No
-                            </label>
+                            <input className="input" type="text" placeholder="Name" value={referral} onChange={(e) => setReferral(e.target.value)}></input>
                         </div>
                     </div>
                 </div>

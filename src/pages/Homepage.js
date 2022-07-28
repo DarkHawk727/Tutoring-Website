@@ -82,7 +82,7 @@ const Homepage = () => {
                 Subject Offerings
                 </h5>
                 <div class="content">
-                We offer a huge breadth of subjects from kindergarten to even university classes. Our most popular subjects are in Math, Science, and English.
+                We offer a huge breadth of subjects from kindergarten to even university classes. Our most popular subjects are in Math, the Sciences, and English.
                 </div>
             </div>
             </div>
@@ -111,7 +111,7 @@ const Homepage = () => {
             <div class="card">
             <div class="card-content">
                 <p class="title">
-                “During the pandemic, Matt was able to help me one-on-one with my chemistry homework when my teacher couldn't”
+                “During the pandemic, Matt was able to help me one-on-one with my chemistry homework when my teacher couldn't.”
                 </p>
                 <p class="subtitle">
                 Jeff Y.
@@ -171,7 +171,7 @@ const Homepage = () => {
         </div>
         </div>
         <p className="has-text-centered">
-        As well as many others.
+        As well as many others!
         </p>
     </section>
     </div>

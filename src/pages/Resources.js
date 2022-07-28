@@ -1,6 +1,5 @@
 import React from 'react'
 import {resources} from './resource_data';
-import uniqid from 'uniqid';
 
 const Resources = () => {
   return (
