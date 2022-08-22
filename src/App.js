@@ -9,7 +9,7 @@ import './pages/bulmaswatch.min.css';
 import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
 import Homepage from './pages/Homepage';
-import About from './pages/About';
+import About from './pages/About'; 
 import Contact from './pages/Contact';
 import Jobs from './pages/Jobs';
 import Resources from './pages/Resources';
@@ -19,7 +19,7 @@ import ComingSoon from './pages/ComingSoon';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App has-navbar-fixed-top">
         <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />

@@ -48,7 +48,7 @@ const Homepage = () => {
                 Online and In-person Sessions
                 </h5>
                 <div class="content">
-                We offer both online and in-person sessions. Online sessions are done through Zoom, and in-person sessions can be coordinated at your convenience.
+                We offer both online and in-person sessions (Depending on location). Online sessions are done through Zoom, and in-person sessions can be coordinated at your convenience.
                 </div>
             </div>
             </div>
@@ -65,7 +65,7 @@ const Homepage = () => {
                 Expert Tutor Matching
                 </h5>
                 <div class="content">
-                We match you with the best tutor in the area. We do this by looking at your skills and interests, and then we match you with the best tutor in the area.  
+                We match you with the best tutor for your needs. We do this based on your budget, specific requirements, and availability.
                 </div>
             </div>
             </div>
@@ -82,7 +82,7 @@ const Homepage = () => {
                 Subject Offerings
                 </h5>
                 <div class="content">
-                We offer a huge breadth of subjects from kindergarten to even university classes. Our most popular subjects are in Math, the Sciences, and English.
+                We offer a huge breadth of subjects from kindergarten to even highschool+ classes. Our most popular subjects are in Math, the Sciences, and English.
                 </div>
             </div>
             </div>
@@ -121,7 +121,7 @@ const Homepage = () => {
         </div>
         </div>
         <h3 className="subtitle">
-        We have helped people from the following institutions:
+        We have helped people qualify for the following institutions:
         </h3>
         <div class="columns">
         <div class="column">

@@ -12,25 +12,31 @@ const Jobs = () => {
         + "%0A" +
         "Phone Number: "
         + "%0A %0A" +
-        "1. Tell us about yourself - we would like to get to know you better. Tell us about your hobbies and interests!"
+        "1. What is your educational background? (e.g. high school, college, etc.)"
         + "%0A %0A %0A" + 
-        "2. Nearest major intersection - tutoring sessions take place in the client's home. It is helpful to know your location. "
+        "2. Tell us about yourself - we want to get to know you better. Tell us about your hobbies and interests!"
         + "%0A %0A %0A" + 
-        "3. Teachable subjects - we would like to know what subjects you are able to teach. If possible, please also indicate the grade level of the subjects you are able to teach."
+        "3. Nearest major intersection (or House Address)- tutoring sessions occur in the client's home. It is helpful to know your location. "
         + "%0A %0A %0A" + 
-        "4. Approximate hours per week available - we do not have a minimum hour requirement. Tell us what is best for you."
+        "4. Teachable subjects - we would like to know what subjects you can teach. If possible, please also indicate the grade level of the subjects you are able to teach."
         + "%0A %0A %0A" + 
-        "5. How would you describe your teaching style?"
+        "5. Approximate hours per week available - we do not have a minimum hour requirement. Tell us what is best for you. (If possible, please also indicate the time and days of the week you are available.)"
         + "%0A %0A %0A" + 
-        "6.	Give an example of how you overcame an obstacle - "
+        "6. Please indicate if you have been referred to us by anyone. If so, please indicate who."
+        + "%0A %0A %0A" +
+        "7. Do you have Zoom experience? (Yes/No)"
+        + "%0A %0A %0A" +
+        "8. How would you describe your teaching style?"
         + "%0A %0A %0A" + 
-        "7.	What professional and/or personal achievements are you proud of?"
+        "9. Give an example of how you overcame an obstacle - "
+        + "%0A %0A %0A" + 
+        "10. What professional and/or personal achievements are you proud of?"
          + "%0A %0A %0A" + 
-        "8.	What makes you an effective tutor/teacher?"
+        "11. What makes you an effective tutor/teacher?"
         + "%0A %0A %0A" + 
-        "9.	Vulnerable sector check date? (if applicable)"
+        "12. Vulnerable sector check date? (if applicable)"
         + "%0A %0A %0A" + 
-        "10.  Additional thoughts or comments"
+        "13. Additional thoughts or comments"
         + "%0A %0A %0A";
 
         var mail = document.createElement("a");

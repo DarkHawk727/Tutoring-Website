@@ -7,6 +7,7 @@ const Contact = () => {
     const [grade, setGrade] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [referral, setReferral] = useState("");
+    const [address, setAddress] = useState("");
     const [subject, setSubject] = useState("");
     const [additionalInformation, setAdditionalInformation] = useState("");
     const [parentName, setparentName] = useState("");
@@ -14,7 +15,7 @@ const Contact = () => {
     const [parentPhoneNumber, setparentPhoneNumber] = useState("");
 
     const handleSubmit = () => {
-        var emailBody = "Student Name: " + name + "%0A" + "Student Email: " + email + "%0A" + "Grade: " + grade + "%0A" + "Student Phone Number: " + phoneNumber + "%0A" + "Referrer: " + referral + "%0A" + "Subject(s): " + subject + "%0A" + "Additional Information: " + additionalInformation + "%0A" + "Parent Name: " + parentName + "%0A" + "Parent Email: " + parentEmail + "%0A" + "Parent Phone Number: " + parentPhoneNumber;
+        var emailBody = "Student Name: " + name + "%0A" + "Student Email: " + email + "%0A" + "Grade: " + grade + "%0A" + "Student Phone Number: " + phoneNumber + "%0A" + "Referrer: " + referral + "%0A" + "Address: " + address + "%0A" + "Subject(s): " + subject + "%0A" + "Additional Information: " + additionalInformation + "%0A" + "Parent Name: " + parentName + "%0A" + "Parent Email: " + parentEmail + "%0A" + "Parent Phone Number: " + parentPhoneNumber;
         var mail = document.createElement("a");
         mail.href = "mailto:matt_starai@hotmail.com?subject=Tutoring Request Form&body=" + "PLEASE ATTATCH ANY RESOURCES PERTAINING TO YOUR COURSES TO THIS EMAIL!" + "%0A %0A" + emailBody;
         mail.click();
@@ -79,6 +80,18 @@ const Contact = () => {
                 </div>
             </div>
             <div className="field is-horizontal">
+                <div className="field-label">
+                    <label className="label">If you are interested in in-person tutoring, please write your Address or the address of a conveniant location: </label>
+                </div>
+                <div className="field-body">
+                    <div className="field">
+                        <div className="control">
+                            <input className="input" type="text" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)}></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="field is-horizontal">
                 <div className="field-label is-normal">
                     <label className="label">Subject(s)</label>
                 </div>
@@ -97,7 +110,7 @@ const Contact = () => {
                 <div className="field-body">
                     <div className="field">
                         <div className="control">
-                            <textarea className="textarea" placeholder="Please write any extra information pertaining to your course(s) (Institution, Unit, Chapter, etc.)." value={additionalInformation} onChange={(e) => setAdditionalInformation(e.target.value)}></textarea>
+                            <textarea className="textarea" placeholder="Please write any extra information pertaining to your course(s) (Institution, Unit, Chapter, etc.). Additionally, please also write your goals with these tutoring sessions (e.g. improve a grade, excell in a class, etc.)" value={additionalInformation} onChange={(e) => setAdditionalInformation(e.target.value)}></textarea>
                         </div>
                     </div>
                 </div>

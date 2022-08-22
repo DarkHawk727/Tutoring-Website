@@ -9,11 +9,10 @@ const Navbar = () => {
 
   return (
 <div>
-  <nav className="navbar" role="navigation" aria-label="main navigation">
+  <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
-      <a className="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-      </img>
+      <a className="navbar-item" >
+        <strong>Matt Starai Tutoring</strong>
       </a>
       <a role="button" className={`navbar-burger burger ${isActive ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={toggle}>
       <span aria-hidden="true"></span>

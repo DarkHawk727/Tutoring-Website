@@ -39,13 +39,13 @@ const About = () => {
     </div>
     <div class="level-item has-text-centered">
       <div>
-        <p class="title">1389</p>
+        <p class="title">3200+</p>
         <p class="heading">Hours Tutored</p>
       </div>
     </div>
     <div class="level-item has-text-centered">
       <div>
-        <p class="title">150+</p>
+        <p class="title">75</p>
         <p class="heading">Subjects Offered</p>
       </div>
     </div>
