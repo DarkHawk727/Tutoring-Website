@@ -1,30 +1,3 @@
-import {React, useState} from 'react'
-
-
-const Contact = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [grade, setGrade] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
-    const [referral, setReferral] = useState("");
-    const [address, setAddress] = useState("");
-    const [subject, setSubject] = useState("");
-    const [additionalInformation, setAdditionalInformation] = useState("");
-    const [parentName, setparentName] = useState("");
-    const [parentEmail, setparentEmail] = useState("");
-    const [parentPhoneNumber, setparentPhoneNumber] = useState("");
-
-    const handleSubmit = () => {
-        var emailBody = "Student Name: " + name + "%0A" + "Student Email: " + email + "%0A" + "Grade: " + grade + "%0A" + "Student Phone Number: " + phoneNumber + "%0A" + "Referrer: " + referral + "%0A" + "Address: " + address + "%0A" + "Subject(s): " + subject + "%0A" + "Additional Information: " + additionalInformation + "%0A" + "Parent Name: " + parentName + "%0A" + "Parent Email: " + parentEmail + "%0A" + "Parent Phone Number: " + parentPhoneNumber;
-        var mail = document.createElement("a");
-        mail.href = "mailto:matt_starai@hotmail.com?subject=Tutoring Request Form&body=" + "PLEASE ATTATCH ANY RESOURCES PERTAINING TO YOUR COURSES TO THIS EMAIL!" + "%0A %0A" + emailBody;
-        mail.click();
-
-      }
-
-  return (
-    <div className='m-3'>
-        <h1 class="title ">Schedule a Session</h1>
         <p>
             This form will lead to an email being sent to Matt Starai Tutoring.
         </p>
@@ -174,10 +147,24 @@ const Contact = () => {
                 </div>
             </div>
         </form>
-    </div>
-  )
-}
 
-export default Contact
 
-// Add a comment to the email, that says something like "Please attatch any extra resources pertaining to your course(s)."
+
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [grade, setGrade] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [referral, setReferral] = useState("");
+    const [address, setAddress] = useState("");
+    const [subject, setSubject] = useState("");
+    const [additionalInformation, setAdditionalInformation] = useState("");
+    const [parentName, setparentName] = useState("");
+    const [parentEmail, setparentEmail] = useState("");
+    const [parentPhoneNumber, setparentPhoneNumber] = useState("");
+
+    const handleSubmit = () => {
+        var emailBody = "Student Name: " + name + "%0A" + "Student Email: " + email + "%0A" + "Grade: " + grade + "%0A" + "Student Phone Number: " + phoneNumber + "%0A" + "Referrer: " + referral + "%0A" + "Address: " + address + "%0A" + "Subject(s): " + subject + "%0A" + "Additional Information: " + additionalInformation + "%0A" + "Parent Name: " + parentName + "%0A" + "Parent Email: " + parentEmail + "%0A" + "Parent Phone Number: " + parentPhoneNumber;
+        var mail = document.createElement("a");
+        mail.href = "mailto:matt_starai@hotmail.com?subject=Tutoring Request Form&body=" + "PLEASE ATTATCH ANY RESOURCES PERTAINING TO YOUR COURSES TO THIS EMAIL!" + "%0A %0A" + emailBody;
+        mail.click();

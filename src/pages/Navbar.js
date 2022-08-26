@@ -56,7 +56,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
-            <a className="button is-primary">
+            <a className="button is-warning">
             <strong><Link to="/Contact">Schedule a Session</Link></strong>
             </a>
           </div>

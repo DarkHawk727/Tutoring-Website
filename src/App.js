@@ -4,15 +4,15 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import './pages/bulmaswatch.min.css';
+// import './pages/bulmaswatch.min.css';
 
 import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
 import Homepage from './pages/Homepage';
 import About from './pages/About'; 
-import Contact from './pages/Contact';
-import Jobs from './pages/Jobs';
-import Resources from './pages/Resources';
+import Contact from './pages/TutoringSignUpForm/Contact';
+import Jobs from './pages/JobApplication/Jobs';
+// import Resources from './pages/Resources';
 import FAQ from './pages/FAQ';
 import ComingSoon from './pages/ComingSoon';
 
