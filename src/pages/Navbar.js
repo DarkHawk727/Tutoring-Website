@@ -56,8 +56,8 @@ const Navbar = () => {
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
-            <a className="button is-warning">
-            <strong><Link to="/Contact">Schedule a Session</Link></strong>
+            <a className="button" style={{"background-color": "#C6AC8F", "color": "#ffffff"}}>
+            <strong><Link to="/Contact" style={{"color": "#ffffff"}}>Schedule a Session</Link></strong>
             </a>
           </div>
         </div>

@@ -18,7 +18,7 @@ export class ScheduleStarterSession extends Component {
         <br />
         <h1 className='title'>Consultation Session Booking</h1>
         <p>Coming Soon</p>
-        <button className="button is-warning" onClick={this.continue}>Next</button>
+        <button className="button" style={{"background-color": "#C6AC8F", "color": "#ffffff"}} onClick={this.continue}>Next</button>
         <button className="button" onClick={this.back}>Back</button>
         <progress class="progress" value="3" max="4"></progress>
       </div>

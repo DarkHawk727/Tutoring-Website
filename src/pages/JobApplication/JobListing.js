@@ -35,7 +35,7 @@ export class JobListing extends Component {
                 <li>Must have passable internet skills, knowledge of Zoom, bramble.io, and browser of choice.</li>
             </ul>
             <p>You will attach your resume in the email.</p>
-            <button className="button is-warning is-large" onClick={this.continue}>Apply Now</button>
+            <button className="button is-large" style={{"background-color": "#C6AC8F", "color": "#ffffff"}} onClick={this.continue}>Apply Now</button>
         </div>
     </div>
     )

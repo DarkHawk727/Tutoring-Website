@@ -38,8 +38,8 @@ const About = () => {
     <h2 data-aos={"fade-down"} class="subtitle">
       Bringing a new way to tutor, and a new way to learn.
     </h2>
-    <button data-aos={"fade-down"} class="button is-warning is-large is-primary">
-    <Link to="/Contact">Get Started</Link>
+    <button data-aos={"fade-down"} class="button is-warning is-large is-primary" style={{"background-color": "#C6AC8F", "color": "#ffffff"}}>
+    <Link to="/Contact" style={{"color": "#ffffff"}}>Get Started</Link>
     </button>
   </section>
   <section class="section is-medium">

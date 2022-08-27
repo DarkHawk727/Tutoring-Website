@@ -81,8 +81,8 @@ useEffect(() => {
                     <h1 data-aos={"fade-up"} className="title">
                         Making tutoring easier and more efficient.
                     </h1>
-                    <button data-aos={"fade-up"} class="button is-warning is-large">
-                        <Link to="/Contact">Schedule a Session</Link>
+                    <button data-aos={"fade-up"} class="button is-large" style={{"background-color": "#C6AC8F", "color": "#ffffff"}}>
+                        <Link to="/Contact" style={{"color": "#ffffff"}}>Schedule a Session</Link>
                     </button>
                 </div>
                 <div className="column is-half">
@@ -236,8 +236,8 @@ useEffect(() => {
         <p className="has-text-centered">
             As well as many others!
         </p>
-        <button class="button is-warning is-large">
-            <Link to="/Contact">Schedule a Session</Link>
+        <button class="button is-large" style={{"background-color": "#C6AC8F", "color": "#ffffff"}}>
+            <Link to="/Contact" style={{"color": "#ffffff"}}>Schedule a Session</Link>
         </button>
     </section>
 </div>

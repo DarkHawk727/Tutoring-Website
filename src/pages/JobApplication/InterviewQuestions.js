@@ -76,7 +76,7 @@ export class InterviewQuestions extends Component {
           </label>
         </div>
         <br />
-        <button className="button is-warning" onClick={this.continue}>Submit Application</button>
+        <button className="button" style={{"background-color": "#C6AC8F", "color": "#ffffff"}} onClick={this.continue}>Submit Application</button>
         <button className="button" onClick={this.back}>Back</button>
         <progress class="progress" value="2" max="2"></progress>
       </div>

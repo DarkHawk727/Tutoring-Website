@@ -46,7 +46,7 @@ export class BasicInfo extends Component {
             <input className="input" type="text" placeholder="123 Street Name Dr." onChange={handleChange('address')} defaultValue={values.address}/>
           </div>
         </div>        
-        <button className="button is-warning" onClick={this.continue}>Next</button>
+        <button className="button" style={{"background-color": "#C6AC8F", "color": "#ffffff"}} onClick={this.continue}>Next</button>
         <progress class="progress" value="1" max="2"></progress>
       </div>
       
