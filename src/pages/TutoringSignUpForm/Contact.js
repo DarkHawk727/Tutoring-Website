@@ -59,14 +59,6 @@ export class Contact extends Component {
             )
         case 2:
             return (
-                <ParentGuardianInfo
-                nextStep={this.nextStep}
-                handleChange={this.handleChange}
-                values={values}
-                />
-            )
-        case 3:
-            return (
                 <ScheduleStarterSession 
                 nextStep={this.nextStep}
                 prevStep={this.prevStep}
@@ -74,7 +66,7 @@ export class Contact extends Component {
                 values={values}
                 />
             )
-        case 4:
+        case 3:
             return (
                 <PaymentInfo 
                 nextStep={this.nextStep}
@@ -83,7 +75,7 @@ export class Contact extends Component {
                 values={values}
                 />
             )
-        case 5:
+        case 4:
             return (
                 <SignUpSuccess />
             )

@@ -6,39 +6,35 @@ I used `bulma.css` for the styling. This site includes the following pages:
 - Homepage
 - About
 - Contact
-- Job Application Page
+- Job Application Pages
+- Book a Tutoring Session Pages
 - FAQ
 
 ## TODO by Page
 
 ### Site-wide
 
-- Change color scheme to [this](https://coolors.co/0a0908-22333b-eae0d5-c6ac8f-5e503f), use the blue for the buttons
 - Add animations to the site
 - Fix alignment of various elements
 - General refinments
-- Move content down so it is not hidden by the navbar
-- Literally just change the navbar colours to the #C6AC8F
 - Add hover effects to the buttons
 
 ### Homepage
 
-- Fix university logo image sizes make them hoverable
-
-### About
-
-- Beef up the about text (Include how yall got started, stuff like that)
+- Fix university logo image sizes and make them hoverable and add a second row
 
 ### Jobs
 
-- Incorporate the email form into the page (Basic info page, upload resume, answer personal questions)
-- Find a way to smooth the progress bar
+- Send the application as an email using firebase
+- Redo the progress bar using `o-steps` where each question answered increases the progress bar
+- Add functionality for required fields checking
 
 ### Schedule a Session
 
-- Incorporate form into the page (Student info, parent info, payment...Stripe?, schedule a intro session?)
+- Fix the schedule a consultation page (or remove it entirely)
 - Add functionality for required fields checking
 
 ### FAQ
 
-- Rework the page so it looks like [this](https://dribbble.com/shots/17564765-FAQs-Untitled-UI), use [this](https://codepen.io/brussell98/pen/mEwxjP) for the code for a collapsible menu
+- Rework the page so it looks like [this](https://dribbble.com/shots/17564765-FAQs-Untitled-UI).
+- Make the search bar work

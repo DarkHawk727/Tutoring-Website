@@ -10,6 +10,7 @@ export class ParentGuardianInfo extends Component {
     e.preventDefault();
     this.props.prevStep();
   }
+  
   render() {
     const {values, handleChange } = this.props;
     return (

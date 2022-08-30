@@ -17,14 +17,14 @@ export class BasicInfo extends Component {
         <h1 className="title">Basic Info</h1>
         <p>We're so excited to have you join our team! First we'll start with some basic info.</p>
         <div className="field">
-          <label className="label">Name</label>
+          <label className="label is-pulled-left">Name</label>
           <div className="control">
             <input className="input" type="text" placeholder="Full Name" onChange={handleChange('name')} defaultValue={values.name}/>
           </div>
         </div>
         <br />
         <div className="field">
-          <label className="label">Email</label>
+          <label className="label is-pulled-left">Email</label>
           <div className="control">
             <input className="input" type="email" placeholder="e.g. alexsmith@gmail.com" onChange={handleChange('email')} defaultValue={values.email}/>
           </div>
@@ -41,12 +41,14 @@ export class BasicInfo extends Component {
         </p>
       </div>
         <div className="field">
-          <label className="label">Address</label>
+          <label className="label is-pulled-left">Address</label>
           <div className="control">
             <input className="input" type="text" placeholder="123 Street Name Dr." onChange={handleChange('address')} defaultValue={values.address}/>
           </div>
         </div>        
         <button className="button" style={{"background-color": "#C6AC8F", "color": "#ffffff"}} onClick={this.continue}>Next</button>
+        <br />
+        <br />
         <progress class="progress" value="1" max="2"></progress>
       </div>
       

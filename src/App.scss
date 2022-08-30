@@ -1,3 +1,10 @@
+// Import Bulma first
+@import 'bulma';
+// Import Component main Sass File
+@import '@creativebulma/bulma-collapsible';
+@import "~bulma-calendar/dist/css/bulma-calendar.min.css";
+@import "~bulma-o-steps/bulma-steps.sass";
+
 .App {
   text-align: center;
 }
