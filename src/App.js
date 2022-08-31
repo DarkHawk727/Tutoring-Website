@@ -9,7 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/TutoringSignUpForm/Contact";
 import Jobs from "./pages/JobApplication/Jobs";
 // import Resources from './pages/Resources/Resources';
-import FAQ from "./pages/FAQ/FAQ";
+import FAQ from "./pages/FAQ";
 import ComingSoon from "./pages/ComingSoon";
 
 function App() {

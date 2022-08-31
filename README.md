@@ -14,27 +14,20 @@ I used `bulma.css` for the styling. This site includes the following pages:
 
 ### Site-wide
 
-- Add animations to the site
-- Fix alignment of various elements
 - General refinments
-- Add hover effects to the buttons
+- Figure out how to make the buttons with AOS faster
 
 ### Homepage
 
-- Fix university logo image sizes and make them hoverable and add a second row
+- Resize univeristy images
 
-### Jobs
+### Jobs & Schedule a Session
 
 - Send the application as an email using firebase
 - Redo the progress bar using `o-steps` where each question answered increases the progress bar
 - Add functionality for required fields checking
 
-### Schedule a Session
-
-- Fix the schedule a consultation page (or remove it entirely)
-- Add functionality for required fields checking
-
 ### FAQ
 
-- Rework the page so it looks like [this](https://dribbble.com/shots/17564765-FAQs-Untitled-UI).
-- Make the search bar work
+- Make the collapsible functionality work
+- Make the expand logo go on the right side

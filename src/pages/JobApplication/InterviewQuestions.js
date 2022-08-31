@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { motion } from "framer-motion";
+
 export class InterviewQuestions extends Component {
   continue = (e) => {
     e.preventDefault();
@@ -54,8 +56,8 @@ export class InterviewQuestions extends Component {
         />
         <br />
         <h2 className="title is-4 is-pulled-left">
-          Approximate hours per week available - (Please also
-          indicate the time and days of the week you are available.)
+          Approximate hours per week available - (Please also indicate the time
+          and days of the week you are available.)
         </h2>
         <textarea
           className="textarea"
@@ -149,9 +151,7 @@ export class InterviewQuestions extends Component {
           defaultValue={values.additionalThoughts}
         />
         <br />
-        <h2 className="title is-4">
-          Please upload your resume:
-        </h2>
+        <h2 className="title is-4">Please upload your resume:</h2>
         <br />
         <div class="file has-name is-boxed is-centered">
           <label class="file-label">
@@ -166,16 +166,27 @@ export class InterviewQuestions extends Component {
           </label>
         </div>
         <br />
-        <button
-          className="button"
-          style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
-          onClick={this.continue}
-        >
-          Submit Application
-        </button>
-        <button className="button" onClick={this.back}>
-          Back
-        </button>
+        <div className="columns">
+          <div className="column">
+            <motion.button
+              className="button"
+              style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
+              whileHover={{ scale: 1.1 }}
+              onClick={this.continue}
+            >
+              Submit Application
+            </motion.button>
+          </div>
+          <div className="column">
+            <motion.button
+              className="button"
+              whileHover={{ scale: 1.1 }}
+              onClick={this.back}
+            >
+              Back
+            </motion.button>
+          </div>
+        </div>
         <progress class="progress" value="2" max="2"></progress>
       </div>
     );

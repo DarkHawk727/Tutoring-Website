@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+
 import CountUp from "react-countup";
 
 import "aos";
@@ -34,20 +36,21 @@ const About = () => {
     <div className="m-3">
       <section class="section is-large">
         <h1 data-aos={"fade-down"} class="title">
-          Making tutoring easier and more efficient.{" "}
+          New ways to tutor and new ways to learn{" "}
         </h1>
         <h2 data-aos={"fade-down"} class="subtitle">
-          Bringing a new way to tutor, and a new way to learn.
+          Tutoring made easier and more efficient
         </h2>
-        <button
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          class="button is-large"
           data-aos={"fade-down"}
-          class="button is-warning is-large is-primary"
           style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
         >
           <Link to="/Contact" style={{ color: "#ffffff" }}>
-            Get Started
+            Schedule a Session
           </Link>
-        </button>
+        </motion.button>
       </section>
       <section class="section is-medium">
         <div className="columns is-vcentered">
@@ -59,7 +62,7 @@ const About = () => {
               Through these experiences, he has learned what the best teaching
               styles are depending on the students' needs and learning styles.
               When teaching students he always tries to present concepts through
-              relatable experiences and interests for memory association.
+              relatable experiences and interests, for memory association.
             </p>
           </div>
           <div data-aos={"fade-left"} className="column">
@@ -76,12 +79,12 @@ const About = () => {
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <CountUp end={72} duration={3} /> +<p class="heading">Students</p>
+            <CountUp end={75} duration={3} /> +<p class="heading">Students</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <CountUp end={3200} duration={4} /> +
+            <CountUp end={3500} duration={4} /> +
             <p class="heading">Hours Tutored</p>
           </div>
         </div>

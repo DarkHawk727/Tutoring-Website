@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import { motion } from 'framer-motion';
 
 export class JobListing extends Component {
     continue = e => {
@@ -11,7 +13,7 @@ export class JobListing extends Component {
         <h1 class="title is-1">Tutor Application</h1>
         <div className="content has-text-justified">
             <p>
-                Here at Matt Starai Tutoring we are always looking for new and exciting members of our tutoring staff. We have a variety of positions available, look below for some of the positions we are currently hiring for.
+            Here at Matt Starai Tutoring we are always looking for new and exciting members for our tutoring staff.
             </p>
             <h2 class="title is-3">Introduction</h2>
             <p>
@@ -35,7 +37,7 @@ export class JobListing extends Component {
                 <li>Must have passable internet skills, knowledge of Zoom, bramble.io, and browser of choice.</li>
             </ul>
             <p>You will attach your resume in the email.</p>
-            <button className="button is-large" style={{"background-color": "#C6AC8F", "color": "#ffffff"}} onClick={this.continue}>Apply Now</button>
+            <motion.button className="button is-large" style={{"background-color": "#C6AC8F", "color": "#ffffff"}} whileHover={{scale:1.1}} onClick={this.continue}>Apply Now</motion.button>
         </div>
     </div>
     )

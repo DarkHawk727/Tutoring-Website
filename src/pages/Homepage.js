@@ -5,11 +5,18 @@ import "aos";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-import waterloo from "../images/waterloo.jpg";
-import mcmaster from "../images/mcmaster.png";
-import toronto from "../images/toronto.png";
-// import uottawa from '../images/uottawa.png';
-// import ubc from '../images/ubc.png';
+import { motion } from "framer-motion";
+
+import uwaterloo from "../images/universities/uwaterloo.jpg";
+import uoft from "../images/universities/uoft.png";
+import ubc from "../images/universities/ubc.jpg";
+import uottawa from "../images/universities/uottawa.png";
+import mcgill from "../images/universities/mcgill.png";
+import mcmaster from "../images/universities/mcmaster.png";
+import queens from "../images/universities/queens.jpg";
+import tmu from "../images/universities/tmu.png";
+import uofa from "../images/universities/uofa.jpg";
+import dalhousie from "../images/universities/dalhousie.jpg";
 
 import lottie from "lottie-web";
 
@@ -79,17 +86,18 @@ const Homepage = () => {
           <div className="columns is-vcentered">
             <div className="column is-half">
               <h1 data-aos={"fade-up"} className="title">
-                Making tutoring easier and more efficient.
+                New ways to tutor and new ways to learn.
               </h1>
-              <button
-                data-aos={"fade-up"}
+              <motion.button
+                whileHover={{ scale: 1.1 }}
                 class="button is-large"
+                data-aos={"fade-up"}
                 style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
               >
                 <Link to="/Contact" style={{ color: "#ffffff" }}>
                   Schedule a Session
                 </Link>
-              </button>
+              </motion.button>
             </div>
             <div className="column is-half">
               <figure class="image">
@@ -116,9 +124,9 @@ const Homepage = () => {
               <div class="card-content">
                 <h5 class="title is-5">Online and In-person Sessions</h5>
                 <div class="content">
-                  We offer both online and in-person sessions (Depending on
-                  location). Online sessions are done through Zoom, and
-                  in-person sessions can be coordinated at your convenience.
+                  We offer both online and in-person sessions. Online sessions
+                  are done through Zoom, and in-person sessions can be
+                  coordinated at your convenience.
                 </div>
               </div>
             </div>
@@ -151,7 +159,8 @@ const Homepage = () => {
                 <div class="content">
                   We offer a huge breadth of subjects from kindergarten to even
                   highschool+ classes. Our most popular subjects are in Math,
-                  the Sciences, and English.
+                  the Sciences, and English. Click <Link to="/FAQ">here</Link>{" "}
+                  for a more comphrensive list.
                 </div>
               </div>
             </div>
@@ -165,10 +174,25 @@ const Homepage = () => {
             <div data-aos={"fade-up"} class="card">
               <div class="card-content">
                 <p class="title">
-                  “Matt has been super helpful with my Advanced Functions class,
-                  I wouldn't have passed without him!”
+                  My sons have had the privilege of having Matthew’s tutoring
+                  expertise over the past few years. He was incremental in
+                  putting them on a focussed academic path. Their greatest
+                  successes have been in the secondary courses that Matthew
+                  tutored them in. Having had previous experiences with other
+                  tutors, it was clear that Matthew was able to recognize the
+                  different learning styles of my sons and was able to engage
+                  them in ways where others had not been successful. Matthew was
+                  always calm and concise in his lesson delivery and made my
+                  sons stay on task in positive ways. He was always on time,
+                  reliable and flexible. In the end, his assistance in their
+                  learning has left them with confidence in their abilities and
+                  a hope for future learning successes. I would highly recommend
+                  Matthew and have to other teaching colleagues. We are so
+                  grateful to have had Matthew’s expertise and assistance
+                  through some very difficult learning times. Thank you,
+                  Matthew!
                 </p>
-                <p class="subtitle">Sarah B.</p>
+                <p class="subtitle">Nancy M.</p>
               </div>
             </div>
           </div>
@@ -176,10 +200,13 @@ const Homepage = () => {
             <div data-aos={"fade-up"} class="card">
               <div class="card-content">
                 <p class="title">
-                  “During the pandemic, Matt was able to help me one-on-one with
-                  my chemistry homework when my teacher couldn't.”
+                  Matt is a good person. He is always patient and understanding.
+                  He can present materials in a clear, simple way to ensure you
+                  understand what you're learning, which makes him a great
+                  teacher. Having worked with Matt as a tutor for a number of
+                  years, I would highly recommend him.
                 </p>
-                <p class="subtitle">Jeff Y.</p>
+                <p class="subtitle">Haider A.</p>
               </div>
             </div>
           </div>
@@ -191,66 +218,108 @@ const Homepage = () => {
         </h3>
         <div class="columns">
           <div class="column">
-            <div class="card">
+            <motion.div class="card" whileHover={{ y: -7 }}>
               <div class="card-image">
                 <figure class="image is-2by1">
-                  <img
-                    src="https://www.artefactual.com/wp-content/uploads/2018/10/ubc-logo-2018-narrowsig-blue-rgb300.jpg"
-                    alt="UBC Logo"
-                  />
+                  <img src={ubc} alt="University of British Columbia Logo" />
                 </figure>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div class="column">
-            <div class="card">
+            <motion.div class="card" whileHover={{ y: -7 }}>
               <div class="card-image">
                 <figure class="image is-2by1">
-                  <img src={toronto} alt="UofT Logo" />
+                  <img src={uoft} alt="University of Toronto Logo" />
                 </figure>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div class="column">
-            <div class="card">
+            <motion.div class="card" whileHover={{ y: -7 }}>
               <div class="card-image">
                 <figure class="image is-2by1">
-                  <img src={mcmaster} alt="McMaster Logo" />
+                  <img src={mcmaster} alt="McMaster University Logo" />
                 </figure>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div class="column">
-            <div class="card">
+            <motion.div class="card" whileHover={{ y: -7 }}>
               <div class="card-image">
                 <figure class="image is-2by1">
-                  <img src={waterloo} alt="Waterloo Logo" />
+                  <img src={uwaterloo} alt="Univeristy of Waterloo Logo" />
                 </figure>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div class="column">
-            <div class="card">
+            <motion.div class="card" whileHover={{ y: -7 }}>
               <div class="card-image">
                 <figure class="image is-is-2by1">
-                  <img
-                    src="https://www.uottawa.ca/brand/sites/www.uottawa.ca.brand/files/4_2_0_horizontal_logo.png"
-                    alt="Placeholder image"
-                  />
+                  <img src={uottawa} alt="University of Ottawa Logo" />
                 </figure>
               </div>
-            </div>
+            </motion.div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <motion.div class="card" whileHover={{ y: -7 }}>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src={dalhousie} alt="Dalhousie Logo" />
+                </figure>
+              </div>
+            </motion.div>
+          </div>
+          <div class="column">
+            <motion.div class="card" whileHover={{ y: -7 }}>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src={queens} alt="Queen's University Logo" />
+                </figure>
+              </div>
+            </motion.div>
+          </div>
+          <div class="column">
+            <motion.div class="card" whileHover={{ y: -7 }}>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src={uofa} alt="University of Alberta Logo" />
+                </figure>
+              </div>
+            </motion.div>
+          </div>
+          <div class="column">
+            <motion.div class="card" whileHover={{ y: -7 }}>
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src={mcgill} alt="McGill Logo" />
+                </figure>
+              </div>
+            </motion.div>
+          </div>
+          <div class="column">
+            <motion.div class="card" whileHover={{ y: -7 }}>
+              <div class="card-image">
+                <figure class="image is-is-2by1">
+                  <img src={tmu} alt="Toronto Metropolitan University Logo" />
+                </figure>
+              </div>
+            </motion.div>
           </div>
         </div>
         <p className="has-text-centered">As well as many others!</p>
-        <button
+        <motion.button
+          whileHover={{ scale: 1.1 }}
           class="button is-large"
           style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
         >
           <Link to="/Contact" style={{ color: "#ffffff" }}>
             Schedule a Session
           </Link>
-        </button>
+        </motion.button>
       </section>
     </div>
   );

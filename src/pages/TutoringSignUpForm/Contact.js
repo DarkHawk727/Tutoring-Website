@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import StudentInfo from './StudentInfo'
-import ParentGuardianInfo from './ParentGuardianInfo'
 import PaymentInfo from './PaymentInfo'
 import ScheduleStarterSession from './ScheduleStarterSession'
 import SignUpSuccess from './SignUpSuccess'

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bulma-pricingtable/dist/css/bulma-pricingtable.min.css";
-// import {pricingtable} from "./pricing-table.css";
+import { motion } from "framer-motion";
 
 export class PaymentForm extends Component {
   continue = (e) => {
@@ -55,13 +55,14 @@ export class PaymentForm extends Component {
               </div>
             </div>
             <div class="plan-footer">
-              <button
+              <motion.button
                 class="button is-fullwidth"
                 style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
+                whileHover={{ scale: 1.1 }}
                 onClick={this.continue}
               >
                 Choose
-              </button>
+              </motion.button>
             </div>
           </div>
 
@@ -88,13 +89,14 @@ export class PaymentForm extends Component {
               </div>
             </div>
             <div class="plan-footer">
-              <button
+              <motion.button
                 class="button is-fullwidth"
                 style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
+                whileHover={{ scale: 1.1 }}
                 onClick={this.continue}
               >
                 Choose
-              </button>
+              </motion.button>
             </div>
           </div>
 
@@ -121,20 +123,25 @@ export class PaymentForm extends Component {
               </div>
             </div>
             <div class="plan-footer">
-              <button
+              <motion.button
                 class="button is-fullwidth"
                 style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
+                whileHover={{ scale: 1.1 }}
                 onClick={this.continue}
               >
                 Choose
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
         <br />
-        <button className="button" onClick={this.back}>
+        <motion.button
+          className="button"
+          onClick={this.back}
+          whileHover={{ scale: 1.1 }}
+        >
           Back
-        </button>
+        </motion.button>
         <progress class="progress" value="4" max="4"></progress>
       </div>
     );
