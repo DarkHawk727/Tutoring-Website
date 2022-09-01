@@ -24,7 +24,6 @@ I used `bulma.css` for the styling. This site includes the following pages:
 
 ### Jobs & Schedule a Session
 
-- Send the application as an email using firebase
 - Redo the progress bar using `o-steps` where each question answered increases the progress bar
 - Add functionality for required fields checking
 
