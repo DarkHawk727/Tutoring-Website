@@ -12,7 +12,23 @@ import Jobs from "./pages/JobApplication/Jobs";
 import FAQ from "./pages/FAQ";
 import ComingSoon from "./pages/ComingSoon";
 
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 function App() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyDUclMzSAW3WlMNtGBaNNfnShCA9TN5WDI",
+    authDomain: "matt-tutoring-website.firebaseapp.com",
+    projectId: "matt-tutoring-website",
+    storageBucket: "matt-tutoring-website.appspot.com",
+    messagingSenderId: "54891148698",
+    appId: "1:54891148698:web:3210c75c301af29beb3623",
+    measurementId: "G-G91TY9E063"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
   return (
     <div className="App has-navbar-fixed-top">
       <Navbar />

@@ -1,19 +1,86 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 import { motion } from "framer-motion";
 
-export class InterviewQuestions extends Component {
-  continue = (e) => {
+import { getFunctions, httpsCallable } from "firebase/functions";
+
+const InterviewQuestions = (props) => {
+  const { values, handleChange } = props;
+  const [selectedFile, setSelectedFile] = useState(null);
+  const continueForm = async (e) => {
+    const message = {
+      name: values.name,
+      email: values.email,
+      phoneNumber: values.phoneNumber,
+      address: values.address,
+      education: values.education,
+      teachableSubjects: values.teachableSubjects,
+      availableTime: values.availableTime,
+      referral: values.referral,
+      bio: values.bio,
+      zoomExperience: values.zoomExperience,
+      teachingStyle:  values.teachingStyle,
+      obstacles: values.obstacles,
+      achievements: values.achievements,
+      effectiveTutor: values.effectiveTutor,
+      vulnerableSector: values.vulnerableSector,
+      additionalThoughts: values.additionalThoughts,
+  }
+  const messageHTML = `
+      <html>
+      <h1>Applicant Info</h1>
+      <p>Applicant Name: ${message.name}</p>
+      <p>Applicant Email: ${message.email}</p>
+      <p>Applicant Phone Number: ${message.phoneNumber}</p>
+      <p>Applicant Address: ${message.address}</p>
+      <p>Applicant Education: ${message.education}</p>
+      <p>Applicant Teachable Subjects: ${message.teachableSubjects}</p>
+      <p>Applicant Available Time: ${message.availableTime}</p>
+      <p>Applicant Referral: ${message.referral}</p>
+      <p>Applicant Bio: ${message.bio}</p>
+      <p>Applicant Zoom Experience: ${message.zoomExperience}</p>
+      <p>Applicant Teaching Style: ${message.teachingStyle}</p>
+      <p>Applicant Obstacles: ${message.obstacles}</p>
+      <p>Applicant Achievements: ${message.achievements}</p>
+      <p>Applicant Effective Tutor: ${message.effectiveTutor}</p>
+      <p>Applicant Vulnerable Sector: ${message.vulnerableSector}</p>
+      <p>Applicant Additional Thoughts: ${message.additionalThoughts}</p>
+      </html>
+  `;
     e.preventDefault();
-    this.props.nextStep();
+    const functions = getFunctions();
+    const sendEmail = httpsCallable(functions, 'sendMail');
+    const attachment = await getBase64(selectedFile);
+      sendEmail({ message: messageHTML, subject: "New Job Applicant", attachment: attachment })
+      .then((result) => {
+        // Read result of the Cloud Function.
+        /** @type {any} */
+        const data = result.data;
+        const sanitizedMessage = data.text;
+      });
+    props.nextStep();
   };
 
-  back = (e) => {
+  const back = (e) => {
     e.preventDefault();
-    this.props.prevStep();
+    props.prevStep();
   };
-  render() {
-    const { values, handleChange } = this.props;
+
+  function getBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        let encoded = reader.result.toString().replace(/^data:(.*,)?/, '');
+        if ((encoded.length % 4) > 0) {
+          encoded += '='.repeat(4 - (encoded.length % 4));
+        }
+        resolve(encoded);
+      };
+      reader.onerror = error => reject(error);
+    });
+  }
+  
     return (
       <div className="m-3 mt-6">
         <h1 className="title">Resume and Interview Questions</h1>
@@ -155,14 +222,17 @@ export class InterviewQuestions extends Component {
         <br />
         <div class="file has-name is-boxed is-centered">
           <label class="file-label">
-            <input class="file-input" type="file" name="resume" />
+            <input class="file-input" type="file" name="resume" onChange={(e) =>  {
+              e.preventDefault();
+              setSelectedFile(e.target.files[0])}
+            }/>
             <span class="file-cta">
               <span class="file-icon">
                 <i class="fas fa-upload"></i>
               </span>
               <span class="file-label">Choose a file…</span>
             </span>
-            <span class="file-name">resume.pdf</span>
+            <span class="file-name" >{selectedFile? selectedFile.name: "resume.pdf"}</span>
           </label>
         </div>
         <br />
@@ -172,7 +242,7 @@ export class InterviewQuestions extends Component {
               className="button"
               style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
               whileHover={{ scale: 1.1 }}
-              onClick={this.continue}
+              onClick={continueForm}
             >
               Submit Application
             </motion.button>
@@ -181,7 +251,7 @@ export class InterviewQuestions extends Component {
             <motion.button
               className="button"
               whileHover={{ scale: 1.1 }}
-              onClick={this.back}
+              onClick={back}
             >
               Back
             </motion.button>
@@ -191,6 +261,5 @@ export class InterviewQuestions extends Component {
       </div>
     );
   }
-}
 
 export default InterviewQuestions;

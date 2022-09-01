@@ -20,6 +20,7 @@ I used `bulma.css` for the styling. This site includes the following pages:
 ### Homepage
 
 - Resize univeristy images
+- Maybe use [tiles](https://bulma.io/documentation/layout/tiles/) for the testimonials to allow for varied lengths.
 
 ### Jobs & Schedule a Session
 
@@ -31,3 +32,18 @@ I used `bulma.css` for the styling. This site includes the following pages:
 
 - Make the collapsible functionality work
 - Make the expand logo go on the right side
+
+### Packages
+
+- [react.js](https://reactjs.org/)
+- [react-aos](https://www.npmjs.com/package/react-aos)
+- [react-dom](https://reactjs.org/docs/react-dom.html)
+- [bulma](https://bulma.io/)
+- [firebase](https://firebase.google.com/)
+- [bulma-calendar](https://www.npmjs.com/package/bulma-calendar)
+- [bulma-pricingtable](https://www.npmjs.com/package/bulma-pricingtable)
+- [bulma-accordion](https://www.npmjs.com/package/bulma-accordion)
+- [o-steps](https://bulma.io/documentation/components/steps/)
+- [framer-motion](https://framer.com/motion/)
+- [lottie-react](https://www.npmjs.com/package/lottie-react)
+- [react-countup](https://www.npmjs.com/package/react-countup)

@@ -14,13 +14,14 @@ export class Contact extends Component {
         gradeLevel : '',
         studentPhoneNumber: '',
         studentAddress: '',
-        studentAvailableTime: '',
+        format: '',
         desiredSubjects: '',
         studentReferral: '',
         additionalInfo: '',
         parentName: '',
         parentEmail: '',
         parentPhoneNumber: '',
+        parentAdditionalInfo: '',
 
     }
 
@@ -44,8 +45,8 @@ export class Contact extends Component {
 
   render() {
     const { step } = this.state;
-    const { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, studentAvailableTime, desiredSubjects, studentReferral, additionalInfo, parentName, parentEmail, parentPhoneNumber } = this.state;
-    const values = { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, studentAvailableTime, desiredSubjects, studentReferral, additionalInfo, parentName, parentEmail, parentPhoneNumber };
+    const { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, format, desiredSubjects, studentReferral, additionalInfo, parentName, parentEmail, parentPhoneNumber, parentAdditionalInfo } = this.state;
+    const values = { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, format, desiredSubjects, studentReferral, additionalInfo, parentName, parentEmail, parentPhoneNumber, parentAdditionalInfo };
 
     switch(step) {
         case 1:
@@ -56,25 +57,25 @@ export class Contact extends Component {
                     values={values}
                 />
             )
+        // case 2:
+        //     return (
+        //         <ScheduleStarterSession 
+        //         nextStep={this.nextStep}
+        //         prevStep={this.prevStep}
+        //         handleChange={this.handleChange}
+        //         values={values}
+        //         />
+        //     )
+        // case 3:
+        //     return (
+        //         <PaymentInfo 
+        //         nextStep={this.nextStep}
+        //         prevStep={this.prevStep}
+        //         handleChange={this.handleChange}
+        //         values={values}
+        //         />
+        //     )
         case 2:
-            return (
-                <ScheduleStarterSession 
-                nextStep={this.nextStep}
-                prevStep={this.prevStep}
-                handleChange={this.handleChange}
-                values={values}
-                />
-            )
-        case 3:
-            return (
-                <PaymentInfo 
-                nextStep={this.nextStep}
-                prevStep={this.prevStep}
-                handleChange={this.handleChange}
-                values={values}
-                />
-            )
-        case 4:
             return (
                 <SignUpSuccess />
             )

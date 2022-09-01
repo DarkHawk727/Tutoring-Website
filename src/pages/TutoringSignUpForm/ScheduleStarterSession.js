@@ -18,7 +18,7 @@ export class ScheduleStarterSession extends Component {
       type: "datetime",
       displayMode: "inline",
     }
-    const calendars = bulmaCalendar.attach('[type="datetime" data-display-mode="inline"]', options);
+    const calendars = bulmaCalendar.attach('[type="date"]', options);
 
     // Loop on each calendar initialized
     calendars.forEach((calendar) => {
@@ -49,7 +49,7 @@ export class ScheduleStarterSession extends Component {
 
         <button
           className="button"
-          style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
+          style={{ "backgroundColor": "#C6AC8F", color: "#ffffff" }}
           onClick={this.continue}
         >
           Next
@@ -57,7 +57,7 @@ export class ScheduleStarterSession extends Component {
         <button className="button" onClick={this.back}>
           Back
         </button>
-        <progress class="progress" value="3" max="4"></progress>
+        <progress className="progress" value="3" max="4"></progress>
       </div>
     );
   }
