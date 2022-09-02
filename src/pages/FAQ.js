@@ -29,9 +29,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               How do I get started?{"  "}
-              <a href="#collapsible-message-accordion-5" data-action="collapse">
-                <img className="image is-pulled-right" src={add} alt="add" />
-              </a>
             </p>
           </div>
           <div
@@ -52,9 +49,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               What subjects do we tutor?{" "}
-              <a href="#collapsible-message-accordion-1" data-action="collapse">
-                Collapse/Expand
-              </a>
             </p>
           </div>
           <div
@@ -82,9 +76,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               What is the cost of tutoring?{" "}
-              <a href="#collapsible-message-accordion-2" data-action="collapse">
-                Collapse/Expand
-              </a>
             </p>
           </div>
           <div
@@ -103,9 +94,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               What site do you use for tutoring?{" "}
-              <a href="#collapsible-message-accordion-3" data-action="collapse">
-                Collapse/Expand
-              </a>
             </p>
           </div>
           <div
@@ -125,9 +113,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               Can you tutor in my home?{" "}
-              <a href="#collapsible-message-accordion-4" data-action="collapse">
-                Collapse/Expand
-              </a>
             </p>
           </div>
           <div
@@ -145,9 +130,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               How do I pay for tutoring?{" "}
-              <a href="#collapsible-message-accordion-6" data-action="collapse">
-                Collapse/Expand
-              </a>
             </p>
           </div>
           <div
@@ -164,9 +146,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               How do I cancel tutoring?{" "}
-              <a href="#collapsible-message-accordion-7" data-action="collapse">
-                Collapse/Expand
-              </a>
             </p>
           </div>
           <div
@@ -185,9 +164,6 @@ const FAQ = () => {
           <div class="message-header">
             <p>
               Can you tutor in-person?{" "}
-              <a href="#collapsible-message-accordion-8" data-action="collapse">
-                Collapse/Expand
-              </a>
             </p>
           </div>
           <div

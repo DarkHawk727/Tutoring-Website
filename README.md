@@ -1,4 +1,4 @@
-# Matt Starai Tutoring Website
+# Matt Starai Tutoring Website v3.0
 
 This is a repository for the Matt Starai Tutoring Website. The first iteration was done in boostrap studio. For this iteration, I will be using `react.js`.
 I used `bulma.css` for the styling. This site includes the following pages:
@@ -29,8 +29,7 @@ I used `bulma.css` for the styling. This site includes the following pages:
 
 ### FAQ
 
-- Make the collapsible functionality work
-- Make the expand logo go on the right side
+- Add collapsible functionality work
 
 ### Packages
 
