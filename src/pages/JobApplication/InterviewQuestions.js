@@ -28,30 +28,41 @@ const InterviewQuestions = (props) => {
   }
   const messageHTML = `
       <html>
-      <h1>Applicant Info</h1>
-      <p>Applicant Name: ${message.name}</p>
-      <p>Applicant Email: ${message.email}</p>
-      <p>Applicant Phone Number: ${message.phoneNumber}</p>
-      <p>Applicant Address: ${message.address}</p>
-      <p>Applicant Education: ${message.education}</p>
-      <p>Applicant Teachable Subjects: ${message.teachableSubjects}</p>
-      <p>Applicant Available Time: ${message.availableTime}</p>
-      <p>Applicant Referral: ${message.referral}</p>
-      <p>Applicant Bio: ${message.bio}</p>
-      <p>Applicant Zoom Experience: ${message.zoomExperience}</p>
-      <p>Applicant Teaching Style: ${message.teachingStyle}</p>
-      <p>Applicant Obstacles: ${message.obstacles}</p>
-      <p>Applicant Achievements: ${message.achievements}</p>
-      <p>Applicant Effective Tutor: ${message.effectiveTutor}</p>
+      <h1>Basic Information:</h1>
+      <strong>Name:</strong> ${message.name}<br />
+      <strong>Email:</strong> ${message.email}<br />
+      <strong>Phone Number:</strong> ${message.phoneNumber}<br />
+      <strong>Address:</strong> ${message.address}<br />
+      <strong>Education:</strong> ${message.education}<br />
+      <h1> Tutoring Preferences:</h1>
+      <strong>Zoom Experience:</strong> ${message.zoomExperience}<br />
+      <strong>Teachable Subjects:</strong> ${message.teachableSubjects}<br />
+      <strong>Available Time:</strong> ${message.availableTime}<br />
+      <h1>References:</h1>
+      <strong>Referral:</strong> ${message.referral}<br />
+      <h1>Interview Questions:</h1>
+      <h2>Tell us about yourself - we want to get to know you better. Tell us about your hobbies and interests!</h2>
+      <p>${message.bio}</p><br />
+      <h2>How would you describe your teaching style?</h2>
+      <p>${message.teachingStyle}</p><br />
+      <h2>Give an example of a time when you overcame an obstacle.</h2>
+      <p>${message.obstacles}</p><br />
+      <h2>What professional/personal achievements are you proud of?</h2>
+      <p>${message.achievements}</p><br />
+      <h2>What makes you an effective tutor/teacher?</h2>
+      <p>${message.effectiveTutor}</p><br />
+
+      <h1>Additional Thoughts:</h1>
+      <p>${message.additionalThoughts}</p><br />
+
       <p>Applicant Vulnerable Sector: ${message.vulnerableSector}</p>
-      <p>Applicant Additional Thoughts: ${message.additionalThoughts}</p>
       </html>
   `;
     e.preventDefault();
     const functions = getFunctions();
     const sendEmail = httpsCallable(functions, 'sendMail');
     const attachment = await getBase64(selectedFile);
-      sendEmail({ message: messageHTML, subject: "New Job Applicant", attachment: attachment })
+      sendEmail({ emailAddress: message.email, message: messageHTML, subject: "New Job Applicant", attachment: attachment })
       .then((result) => {
         // Read result of the Cloud Function.
         /** @type {any} */

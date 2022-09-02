@@ -27,25 +27,25 @@ export class StudentInfo extends Component {
     const messageHTML = `
         <html>
         <h1>Student Info</h1>
-        <p>Student Name: ${message.studentName}</p>
-        <p>Student Email: ${message.studentEmail}</p>
-        <p>Grade Level: ${message.gradeLevel}</p>
-        <p>Student Phone Number: ${message.studentPhoneNumber}</p>
-        <p>Student Address: ${message.studentAddress}</p>
-        <p>Format: ${message.format}</p>
-        <p>Desired Subjects: ${message.desiredSubjects}</p>
-        <p>Student Referral: ${message.studentReferral}</p>
-        <p>Additional Info: ${message.additionalInfo}</p>
+        <strong>Student Name:</strong> ${message.studentName}<br />
+        <strong>Student Email:</strong> ${message.studentEmail}<br />
+        <strong>Grade Level:</strong> ${message.gradeLevel}<br />
+        <strong>Student Phone Number:</strong> ${message.studentPhoneNumber}<br />
+        <strong>Format:</strong> ${message.format}<br />
+        <strong>Address:</strong> ${message.studentAddress}<br />
+        <strong>Preferred Subjects:</strong> ${message.desiredSubjects}<br />
+        <strong>Referral:</strong> ${message.studentReferral}<br />
+        <strong>What are your goals for tutoring?</strong> ${message.additionalInfo}<br />
         <h1>Parent Info</h1>
-        <p>Parent Name: ${message.parentName}</p>
-        <p>Parent Email: ${message.parentEmail}</p>
-        <p>Parent Phone Number: ${message.parentPhoneNumber}</p>
-        <p>Parent Additional Info: ${message.parentAdditionalInfo}</p>
+        <strong>Parent Name:</strong> ${message.parentName}<br />
+        <strong>Parent Email:</strong> ${message.parentEmail}<br />
+        <strong>Parent Phone Number:</strong> ${message.parentPhoneNumber}<br />
+        <strong>Parent Additional Info:</strong> ${message.parentAdditionalInfo}<br />
         </html>
     `;
     const functions = getFunctions();
     const sendEmail = httpsCallable(functions, 'sendMail');
-    sendEmail({ message: messageHTML, subject: "New Tutoring Sign up" })
+    sendEmail({ emailAddress: message.parentEmail, message: messageHTML, subject: "New Tutoring Sign up" })
       .then((result) => {
         // Read result of the Cloud Function.
         /** @type {any} */
@@ -283,11 +283,11 @@ export class StudentInfo extends Component {
           whileHover={{ scale: 1.1 }}
           onClick={this.continue}
         >
-          Next
+          Submit
         </motion.button>
         <br />
         <br />
-        <progress className="progress" value="1" max="4"></progress>
+        <progress className="progress" value="1" max="2"></progress>
       </div>
     );
   }

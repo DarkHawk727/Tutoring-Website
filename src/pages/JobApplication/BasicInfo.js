@@ -40,7 +40,7 @@ export class BasicInfo extends Component {
             <input
               className="input"
               type="email"
-              placeholder="e.g. alexsmith@gmail.com"
+              placeholder="Email"
               onChange={handleChange("email")}
               defaultValue={values.email}
             />
