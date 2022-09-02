@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tutoring-Website/static/css/main.1ed88523.css",
-    "main.js": "/Tutoring-Website/static/js/main.e8bcf6e6.js",
+    "main.js": "/Tutoring-Website/static/js/main.c3b7784e.js",
     "static/js/787.345ad167.chunk.js": "/Tutoring-Website/static/js/787.345ad167.chunk.js",
     "static/media/ubc.jpg": "/Tutoring-Website/static/media/ubc.7014148d5af651084bf9.jpg",
     "static/media/queens.jpg": "/Tutoring-Website/static/media/queens.0e7fd49b1ad32181acd5.jpg",
@@ -15,11 +15,11 @@
     "index.html": "/Tutoring-Website/index.html",
     "static/media/add-424x241x-2.svg": "/Tutoring-Website/static/media/add-424x241x-2.944883d512cae4a31504bf79703941d4.svg",
     "main.1ed88523.css.map": "/Tutoring-Website/static/css/main.1ed88523.css.map",
-    "main.e8bcf6e6.js.map": "/Tutoring-Website/static/js/main.e8bcf6e6.js.map",
+    "main.c3b7784e.js.map": "/Tutoring-Website/static/js/main.c3b7784e.js.map",
     "787.345ad167.chunk.js.map": "/Tutoring-Website/static/js/787.345ad167.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ed88523.css",
-    "static/js/main.e8bcf6e6.js"
+    "static/js/main.c3b7784e.js"
   ]
 }
