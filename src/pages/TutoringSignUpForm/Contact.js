@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import StudentInfo from './StudentInfo'
-import PaymentInfo from './PaymentInfo'
-import ScheduleStarterSession from './ScheduleStarterSession'
+// import PaymentInfo from './PaymentInfo'
+// import ScheduleStarterSession from './ScheduleStarterSession'
 import SignUpSuccess from './SignUpSuccess'
 
 
