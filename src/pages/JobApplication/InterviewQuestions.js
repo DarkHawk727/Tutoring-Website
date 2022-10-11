@@ -11,6 +11,7 @@ const InterviewQuestions = (props) => {
     const message = {
       name: values.name,
       email: values.email,
+      gender: values.gender,
       phoneNumber: values.phoneNumber,
       address: values.address,
       education: values.education,
@@ -31,6 +32,7 @@ const InterviewQuestions = (props) => {
       <h1>Basic Information:</h1>
       <strong>Name:</strong> ${message.name}<br />
       <strong>Email:</strong> ${message.email}<br />
+      <strong>Gender:</strong> ${message.gender}<br />
       <strong>Phone Number:</strong> ${message.phoneNumber}<br />
       <strong>Address:</strong> ${message.address}<br />
       <strong>Education:</strong> ${message.education}<br />

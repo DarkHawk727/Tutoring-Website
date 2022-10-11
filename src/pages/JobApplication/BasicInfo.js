@@ -46,6 +46,18 @@ export class BasicInfo extends Component {
             />
           </div>
         </div>
+        <div className="field">
+          <label className="label is-pulled-left">Gender</label>
+          <div className="control">
+            <input
+              className="input"
+              type="text"
+              placeholder="Gender"
+              onChange={handleChange("gender")}
+              defaultValue={values.gender}
+            />
+          </div>
+        </div>
         <br />
         <div class="field has-addons">
           <p class="control">

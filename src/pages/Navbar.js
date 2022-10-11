@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false);
   const toggle = () => setIsActive(!isActive);
@@ -14,7 +15,7 @@ const Navbar = () => {
       >
         <div className="navbar-brand">
           <a className="navbar-item">
-            <strong>Matt Starai Tutoring</strong>
+            <strong>Starai Tutoring</strong>
           </a>
           <a
             role="button"

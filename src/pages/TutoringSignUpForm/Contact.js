@@ -17,6 +17,7 @@ export class Contact extends Component {
         format: '',
         desiredSubjects: '',
         studentReferral: '',
+        heard: '',
         additionalInfo: '',
         parentName: '',
         parentEmail: '',
@@ -45,8 +46,8 @@ export class Contact extends Component {
 
   render() {
     const { step } = this.state;
-    const { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, format, desiredSubjects, studentReferral, additionalInfo, parentName, parentEmail, parentPhoneNumber, parentAdditionalInfo } = this.state;
-    const values = { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, format, desiredSubjects, studentReferral, additionalInfo, parentName, parentEmail, parentPhoneNumber, parentAdditionalInfo };
+    const { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, format, desiredSubjects, studentReferral, heard, additionalInfo, parentName, parentEmail, parentPhoneNumber, parentAdditionalInfo } = this.state;
+    const values = { studentName, studentEmail, gradeLevel, studentPhoneNumber, studentAddress, format, desiredSubjects, studentReferral, heard, additionalInfo, parentName, parentEmail, parentPhoneNumber, parentAdditionalInfo };
 
     switch(step) {
         case 1:

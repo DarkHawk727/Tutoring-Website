@@ -11,6 +11,7 @@ export class Jobs extends Component {
         step: 1,
         name: '',
         email: '',
+        gender: '',
         phoneNumber: '',
         address: '',
         education: '',
@@ -47,8 +48,8 @@ export class Jobs extends Component {
 
   render() {
     const { step } = this.state;
-    const { name, email, phoneNumber, address, education, availableTime, teachableSubjects, referral, bio, zoomExperience, teachingStyle, obstacles, achievements, effectiveTutor, vulnerableSector, additionalThoughts } = this.state;
-    const values = { name, email, phoneNumber, address, education, availableTime, teachableSubjects, referral, bio, zoomExperience, teachingStyle, obstacles, achievements, effectiveTutor, vulnerableSector, additionalThoughts };
+    const { name, email, gender, phoneNumber, address, education, availableTime, teachableSubjects, referral, bio, zoomExperience, teachingStyle, obstacles, achievements, effectiveTutor, vulnerableSector, additionalThoughts } = this.state;
+    const values = { name, email, gender, phoneNumber, address, education, availableTime, teachableSubjects, referral, bio, zoomExperience, teachingStyle, obstacles, achievements, effectiveTutor, vulnerableSector, additionalThoughts };
 
     switch(step) {
         case 1:

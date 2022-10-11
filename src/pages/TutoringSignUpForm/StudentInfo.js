@@ -18,6 +18,7 @@ export class StudentInfo extends Component {
         referral: this.props.values.referral,
         desiredSubjects: this.props.values.desiredSubjects,
         studentReferral: this.props.values.studentReferral,
+        heard: this.props.values.heard,
         additionalInfo: this.props.values.additionalInfo,
         parentName: this.props.values.parentName,
         parentEmail: this.props.values.parentEmail,
@@ -35,6 +36,7 @@ export class StudentInfo extends Component {
         <strong>Address:</strong> ${message.studentAddress}<br />
         <strong>Preferred Subjects:</strong> ${message.desiredSubjects}<br />
         <strong>Referral:</strong> ${message.studentReferral}<br />
+        <strong>How they heard about us:</strong> ${message.heard}<br />
         <strong>What are your goals for tutoring?</strong> ${message.additionalInfo}<br />
         <h1>Parent Info</h1>
         <strong>Parent Name:</strong> ${message.parentName}<br />
@@ -70,7 +72,7 @@ export class StudentInfo extends Component {
         </p>
         <div className="field is-horizontal">
           <div className="field-label is-expanded">
-            <label className="label">Full Name</label>
+            <label className="label">Basic Information</label>
           </div>
           <div className="field-body">
             <div className="field">
@@ -100,13 +102,10 @@ export class StudentInfo extends Component {
           </div>
         </div>
         <div className="field is-horizontal">
-          <div className="field-label"></div>
+          <div className="field-label"><label className="label">Phone Number</label></div>
           <div className="field-body">
             <div className="field is-expanded">
               <div className="field has-addons">
-                <p className="control">
-                  <a className="button is-static">+44</a>
-                </p>
                 <p className="control is-expanded">
                   <input
                     className="input"
@@ -116,7 +115,6 @@ export class StudentInfo extends Component {
                   />
                 </p>
               </div>
-              <p className="help">Do not enter the first zero</p>
             </div>
           </div>
         </div>
@@ -189,6 +187,26 @@ export class StudentInfo extends Component {
                   onChange={handleChange("studentReferral")}
                   defaultValue={values.studentReferral}
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="field is-horizontal">
+          <div className="field-label">
+            <label className="label">How did you hear about us?</label>
+            </div>
+          <div className="field-body">
+            <div className="field is-expanded">
+              <div className="field has-addons">
+                <p className="control is-expanded">
+                  <input
+                    className="input"
+                    type="tel"
+                    placeholder="I heard about you through..."
+                    onChange={handleChange("heard")}
+                    defaultValue={values.heard}
+                  />
+                </p>
               </div>
             </div>
           </div>

@@ -1,5 +1,7 @@
 # Matt Starai Tutoring Website v3.0
 
+***Add matt as a registered email sender***
+
 This is a repository for the Matt Starai Tutoring Website. The first iteration was done in boostrap studio. For this iteration, I will be using `react.js`.
 I used `bulma.css` for the styling. This site includes the following pages:
 
