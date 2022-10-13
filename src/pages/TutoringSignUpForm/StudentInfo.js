@@ -201,7 +201,7 @@ export class StudentInfo extends Component {
                 <p className="control is-expanded">
                   <input
                     className="input"
-                    type="tel"
+                    type="text"
                     placeholder="I heard about you through..."
                     onChange={handleChange("heard")}
                     defaultValue={values.heard}
