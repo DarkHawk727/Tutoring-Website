@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Tutoring-Website/static/css/main.1ed88523.css",
-    "main.js": "/Tutoring-Website/static/js/main.3dd889dc.js",
-    "static/js/787.345ad167.chunk.js": "/Tutoring-Website/static/js/787.345ad167.chunk.js",
-    "static/media/ubc.jpg": "/Tutoring-Website/static/media/ubc.7014148d5af651084bf9.jpg",
-    "static/media/queens.jpg": "/Tutoring-Website/static/media/queens.0e7fd49b1ad32181acd5.jpg",
-    "static/media/mcgill.png": "/Tutoring-Website/static/media/mcgill.50a54007da7bc1030ff5.png",
-    "static/media/mcmaster.png": "/Tutoring-Website/static/media/mcmaster.c1029a58e86f8994fb8f.png",
-    "static/media/uofa.jpg": "/Tutoring-Website/static/media/uofa.b9a8d0bc9cc005cc19f8.jpg",
-    "static/media/uwaterloo.jpg": "/Tutoring-Website/static/media/uwaterloo.038963c325b86a09045b.jpg",
-    "static/media/dalhousie.jpg": "/Tutoring-Website/static/media/dalhousie.113438e32bfb4eb143b2.jpg",
-    "static/media/uoft.png": "/Tutoring-Website/static/media/uoft.0521648f42cfa507d28f.png",
-    "static/media/uottawa.png": "/Tutoring-Website/static/media/uottawa.795f34f3c72b8729e395.png",
-    "index.html": "/Tutoring-Website/index.html",
-    "static/media/add-424x241x-2.svg": "/Tutoring-Website/static/media/add-424x241x-2.944883d512cae4a31504bf79703941d4.svg",
-    "main.1ed88523.css.map": "/Tutoring-Website/static/css/main.1ed88523.css.map",
-    "main.3dd889dc.js.map": "/Tutoring-Website/static/js/main.3dd889dc.js.map",
-    "787.345ad167.chunk.js.map": "/Tutoring-Website/static/js/787.345ad167.chunk.js.map"
+    "main.css": "/static/css/main.1ed88523.css",
+    "main.js": "/static/js/main.25bc1b09.js",
+    "static/js/787.345ad167.chunk.js": "/static/js/787.345ad167.chunk.js",
+    "static/media/ubc.jpg": "/static/media/ubc.7014148d5af651084bf9.jpg",
+    "static/media/queens.jpg": "/static/media/queens.0e7fd49b1ad32181acd5.jpg",
+    "static/media/mcgill.png": "/static/media/mcgill.50a54007da7bc1030ff5.png",
+    "static/media/mcmaster.png": "/static/media/mcmaster.c1029a58e86f8994fb8f.png",
+    "static/media/uofa.jpg": "/static/media/uofa.b9a8d0bc9cc005cc19f8.jpg",
+    "static/media/uwaterloo.jpg": "/static/media/uwaterloo.038963c325b86a09045b.jpg",
+    "static/media/dalhousie.jpg": "/static/media/dalhousie.113438e32bfb4eb143b2.jpg",
+    "static/media/uoft.png": "/static/media/uoft.0521648f42cfa507d28f.png",
+    "static/media/uottawa.png": "/static/media/uottawa.795f34f3c72b8729e395.png",
+    "index.html": "/index.html",
+    "static/media/add-424x241x-2.svg": "/static/media/add-424x241x-2.944883d512cae4a31504bf79703941d4.svg",
+    "main.1ed88523.css.map": "/static/css/main.1ed88523.css.map",
+    "main.25bc1b09.js.map": "/static/js/main.25bc1b09.js.map",
+    "787.345ad167.chunk.js.map": "/static/js/787.345ad167.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ed88523.css",
-    "static/js/main.3dd889dc.js"
+    "static/js/main.25bc1b09.js"
   ]
 }
