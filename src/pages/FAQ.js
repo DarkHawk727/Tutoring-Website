@@ -58,7 +58,7 @@ const FAQ = () => {
           >
             <div class="message-body-content">
               We offer tutoring in the following subjects from the elementary to
-              college/university level:
+              grade 12+ level:
               <ul>
                 <li>Mathematics (Grades 1-12+)</li>
                 <li>English (Grades 1-12+)</li>
@@ -67,6 +67,8 @@ const FAQ = () => {
                 <li>Accounting (Grades 11-12+)</li>
                 <li>Economics (Grades 11-12+)</li>
                 <li>Computer Science & Engineering (Grades 11-12+)</li>
+                <li>Canadian and International Law (Grades 11-12+)</li>
+                <li>French (Grades 1-12+)</li>
               </ul>
               Please email us with any questions about our subject offerings.
             </div>
@@ -112,7 +114,7 @@ const FAQ = () => {
         <article class="message">
           <div class="message-header">
             <p>
-              Can you tutor in my home?{" "}
+              Can you tutor in my in-person?{" "}
             </p>
           </div>
           <div
@@ -181,7 +183,7 @@ const FAQ = () => {
       <br />
       <p>
         Have another question? Get in touch at{" "}
-        <a href="mailto">matt_starai@hotmail</a>.
+        <a href="mailto">matt_starai@hotmail.com</a>.
       </p>
       <br />
       <motion.button

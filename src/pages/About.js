@@ -34,24 +34,6 @@ const About = () => {
 
   return (
     <div className="m-3">
-      <section class="section is-large">
-        <h1 data-aos={"fade-down"} class="title">
-          New ways to tutor and new ways to learn{" "}
-        </h1>
-        <h2 data-aos={"fade-down"} class="subtitle">
-          Tutoring made easier and more efficient
-        </h2>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          class="button is-large"
-          data-aos={"fade-down"}
-          style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
-        >
-          <Link to="/Contact" style={{ color: "#ffffff" }}>
-            Schedule a Session
-          </Link>
-        </motion.button>
-      </section>
       <section class="section is-medium">
         <div className="columns is-vcentered">
           <div data-aos={"fade-right"} className="column">
@@ -76,22 +58,38 @@ const About = () => {
           </div>
         </div>
       </section>
+      <section class="section is-large">
+        <h1 data-aos={"fade-down"} class="title">
+          New ways to tutor and new ways to learn{" "}
+        </h1>
+        <h2 data-aos={"fade-down"} class="subtitle">
+          Tutoring made easier and more efficient
+        </h2>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          class="button is-large"
+          data-aos={"fade-down"}
+          style={{ "background-color": "#C6AC8F", color: "#ffffff" }}
+        >
+          <Link to="/Contact" style={{ color: "#ffffff" }}>
+            Schedule a Session
+          </Link>
+        </motion.button>
+      </section>
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <CountUp end={75} duration={3} /> +<p class="heading">Students</p>
+            <CountUp end={75} duration={3} style={{ fontSize: 35 }} suffix="+ students" />
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <CountUp end={3500} duration={4} /> +
-            <p class="heading">Hours Tutored</p>
+            <CountUp end={3500} duration={5} style={{ fontSize: 35 }} suffix="+ hours tutored" />
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <CountUp end={75} duration={3} /> +
-            <p class="heading">Subjects Offered</p>
+            <CountUp end={45} duration={3} style={{ fontSize: 35 }} suffix="+ subjects offered" />
           </div>
         </div>
       </nav>

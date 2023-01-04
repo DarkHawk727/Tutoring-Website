@@ -174,25 +174,9 @@ const Homepage = () => {
             <div data-aos={"fade-up"} class="card">
               <div class="card-content">
                 <p class="title">
-                  My sons have had the privilege of having Matthew’s tutoring
-                  expertise over the past few years. He was incremental in
-                  putting them on a focussed academic path. Their greatest
-                  successes have been in the secondary courses that Matthew
-                  tutored them in. Having had previous experiences with other
-                  tutors, it was clear that Matthew was able to recognize the
-                  different learning styles of my sons and was able to engage
-                  them in ways where others had not been successful. Matthew was
-                  always calm and concise in his lesson delivery and made my
-                  sons stay on task in positive ways. He was always on time,
-                  reliable and flexible. In the end, his assistance in their
-                  learning has left them with confidence in their abilities and
-                  a hope for future learning successes. I would highly recommend
-                  Matthew and have to other teaching colleagues. We are so
-                  grateful to have had Matthew’s expertise and assistance
-                  through some very difficult learning times. Thank you,
-                  Matthew!
+                  Matt has helped throughout my university career and he was an amazing tutor. His teaching skills were phenomenal in helping me understand the concepts rather than memorize them. Even on subjects Matt didn’t have experience in he had a network of tutors available to assist me and they all taught just like him, I honestly do not believe I’d be here today without him.
                 </p>
-                <p class="subtitle">Nancy M.</p>
+                <p class="subtitle">Mohamed E.</p>
               </div>
             </div>
           </div>
