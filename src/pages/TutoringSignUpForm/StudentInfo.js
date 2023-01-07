@@ -9,21 +9,21 @@ export class StudentInfo extends Component {
     e.preventDefault();
     this.props.nextStep();
     const message = {
-        studentName: this.props.values.studentName,
-        studentEmail: this.props.values.studentEmail,
-        gradeLevel: this.props.values.gradeLevel,
-        studentPhoneNumber: this.props.values.studentPhoneNumber,
-        studentAddress: this.props.values.studentAddress,
-        format: this.props.values.format,
-        referral: this.props.values.referral,
-        desiredSubjects: this.props.values.desiredSubjects,
-        studentReferral: this.props.values.studentReferral,
-        heard: this.props.values.heard,
-        additionalInfo: this.props.values.additionalInfo,
-        parentName: this.props.values.parentName,
-        parentEmail: this.props.values.parentEmail,
-        parentPhoneNumber: this.props.values.parentPhoneNumber,
-        parentAdditionalInfo: this.props.values.parentAdditionalInfo,
+      studentName: this.props.values.studentName,
+      studentEmail: this.props.values.studentEmail,
+      gradeLevel: this.props.values.gradeLevel,
+      studentPhoneNumber: this.props.values.studentPhoneNumber,
+      studentAddress: this.props.values.studentAddress,
+      format: this.props.values.format,
+      referral: this.props.values.referral,
+      desiredSubjects: this.props.values.desiredSubjects,
+      studentReferral: this.props.values.studentReferral,
+      heard: this.props.values.heard,
+      additionalInfo: this.props.values.additionalInfo,
+      parentName: this.props.values.parentName,
+      parentEmail: this.props.values.parentEmail,
+      parentPhoneNumber: this.props.values.parentPhoneNumber,
+      parentAdditionalInfo: this.props.values.parentAdditionalInfo,
     }
     const messageHTML = `
         <html>
@@ -54,7 +54,7 @@ export class StudentInfo extends Component {
         const data = result.data;
         const sanitizedMessage = data.text;
       });
-    
+
 
 
   };
@@ -65,11 +65,12 @@ export class StudentInfo extends Component {
       <div className="m-3">
         <br />
         <br />
-        <h1 className="title">Student Info</h1>
-        <p>
+        <h1 className="title">Schedule a Session</h1>
+        <p className="is-size-5">
           We're so excited to help you achieve your academic goals! Let's just
-          fill out some basic information.
+          fill out some basic information. Please try to fill in the fields to the best of your ability.
         </p>
+        <br />
         <div className="field is-horizontal">
           <div className="field-label is-expanded">
             <label className="label">Basic Information</label>
@@ -77,7 +78,7 @@ export class StudentInfo extends Component {
           <div className="field-body">
             <div className="field">
               <p className="control is-expanded">
-                <input className="input" type="text" placeholder="Name" onChange={handleChange("studentName")} defaultValue={values.studentName}/>
+                <input className="input" type="text" placeholder="Name" onChange={handleChange("studentName")} defaultValue={values.studentName} />
                 <span className="icon is-small is-left">
                   <i className="fas fa-user"></i>
                 </span>
@@ -85,7 +86,7 @@ export class StudentInfo extends Component {
             </div>
             <div className="field">
               <p className="control is-expanded">
-                <input className="input" type="email" placeholder="Email"  onChange={handleChange("studentEmail")} defaultValue={values.studentEmail}/>
+                <input className="input" type="email" placeholder="Email" onChange={handleChange("studentEmail")} defaultValue={values.studentEmail} />
                 <span className="icon is-small is-left">
                   <i className="fas fa-envelope"></i>
                 </span>
@@ -93,7 +94,7 @@ export class StudentInfo extends Component {
             </div>
             <div className="field">
               <p className="control is-expanded">
-                <input className="input" type="email" placeholder="Grade"  onChange={handleChange("gradeLevel")} defaultValue={values.gradeLevel}/>
+                <input className="input" type="email" placeholder="Grade" onChange={handleChange("gradeLevel")} defaultValue={values.gradeLevel} />
                 <span className="icon is-small is-left">
                   <i className="fas fa-envelope"></i>
                 </span>
@@ -102,7 +103,9 @@ export class StudentInfo extends Component {
           </div>
         </div>
         <div className="field is-horizontal">
-          <div className="field-label"><label className="label">Phone Number</label></div>
+          <div className="field-label">
+            <label className="label">Phone Number</label>
+          </div>
           <div className="field-body">
             <div className="field is-expanded">
               <div className="field has-addons">
@@ -194,7 +197,7 @@ export class StudentInfo extends Component {
         <div className="field is-horizontal">
           <div className="field-label">
             <label className="label">How did you hear about us?</label>
-            </div>
+          </div>
           <div className="field-body">
             <div className="field is-expanded">
               <div className="field has-addons">
@@ -239,7 +242,7 @@ export class StudentInfo extends Component {
           <div className="field-body">
             <div className="field">
               <p className="control is-expanded has-icons-left">
-                <input className="input" type="text" placeholder="Name" onChange={handleChange("parentName")} defaultValue={values.parentName}/>
+                <input className="input" type="text" placeholder="Name" onChange={handleChange("parentName")} defaultValue={values.parentName} />
                 <span className="icon is-small is-left">
                   <i className="fas fa-user"></i>
                 </span>
@@ -247,7 +250,7 @@ export class StudentInfo extends Component {
             </div>
             <div className="field">
               <p className="control is-expanded has-icons-left has-icons-right">
-                <input className="input" type="email" placeholder="Email" onChange={handleChange("parentEmail")} defaultValue={values.parentEmail}/>
+                <input className="input" type="email" placeholder="Email" onChange={handleChange("parentEmail")} defaultValue={values.parentEmail} />
                 <span className="icon is-small is-left">
                   <i className="fas fa-envelope"></i>
                 </span>
@@ -256,12 +259,13 @@ export class StudentInfo extends Component {
           </div>
         </div>
         <div className="field is-horizontal">
-          <div className="field-label"></div>
+          <div className="field-label">
+            <label className="label">Phone Number</label>
+          </div>
           <div className="field-body">
             <div className="field is-expanded">
               <div className="field has-addons">
                 <p className="control">
-                  <a className="button is-static">+44</a>
                 </p>
                 <p className="control is-expanded">
                   <input
@@ -288,7 +292,7 @@ export class StudentInfo extends Component {
                 <textarea
                   className="textarea"
                   placeholder="Explain how we can help you"
-                    onChange={handleChange("parentAdditionalInfo")} defaultValue={values.parentAdditionalInfo}
+                  onChange={handleChange("parentAdditionalInfo")} defaultValue={values.parentAdditionalInfo}
                 ></textarea>
               </div>
             </div>

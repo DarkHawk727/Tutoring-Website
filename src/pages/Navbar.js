@@ -15,7 +15,9 @@ const Navbar = () => {
       >
         <div className="navbar-brand">
           <a className="navbar-item">
-            <strong>Starai Tutoring</strong>
+            <Link to="/">
+              <strong>Starai Tutoring</strong>
+            </Link>
           </a>
           <a
             role="button"
@@ -48,7 +50,7 @@ const Navbar = () => {
               <a className="navbar-link">More</a>
               <div className="navbar-dropdown">
                 <a className="navbar-item">
-                  <Link to="/Jobs">Jobs</Link>
+                  <Link to="/Jobs">Tutor Job Application</Link>
                 </a>
                 <a className="navbar-item">
                   <Link to="/Contact">Schedule a Session</Link>

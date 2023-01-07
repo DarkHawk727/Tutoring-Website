@@ -3,6 +3,7 @@ import BasicInfo from './BasicInfo'
 import InterviewQuestions from './InterviewQuestions'
 import JobSuccess from './JobSuccess'
 import JobListing from './JobListing'
+import TempJobsPage from './TempJobsPage'
 
 
 export class Jobs extends Component {
@@ -54,33 +55,37 @@ export class Jobs extends Component {
     switch(step) {
         case 1:
             return (
-                <JobListing
-                    nextStep={this.nextStep}
-                    handleChange={this.handleChange}
-                    values={values}
-                />
+                <TempJobsPage />
             )
-        case 2:
-            return (
-                <BasicInfo
-                nextStep={this.nextStep}
-                handleChange={this.handleChange}
-                values={values}
-                />
-            )
-        case 3:
-            return (
-                <InterviewQuestions 
-                nextStep={this.nextStep}
-                prevStep={this.prevStep}
-                handleChange={this.handleChange}
-                values={values}
-                />
-            )
-        case 4:
-            return (
-                <JobSuccess />
-            )
+        // case 1:
+        //     return (
+        //         <JobListing
+        //             nextStep={this.nextStep}
+        //             handleChange={this.handleChange}
+        //             values={values}
+        //         />
+        //     )
+        // case 2:
+        //     return (
+        //         <BasicInfo
+        //         nextStep={this.nextStep}
+        //         handleChange={this.handleChange}
+        //         values={values}
+        //         />
+        //     )
+        // case 3:
+        //     return (
+        //         <InterviewQuestions 
+        //         nextStep={this.nextStep}
+        //         prevStep={this.prevStep}
+        //         handleChange={this.handleChange}
+        //         values={values}
+        //         />
+        //     )
+        // case 4:
+        //     return (
+        //         <JobSuccess />
+        //     )
     }
   }
 }
