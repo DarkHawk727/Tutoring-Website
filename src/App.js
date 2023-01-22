@@ -8,6 +8,7 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Contact from "./pages/TutoringSignUpForm/Contact";
 import Jobs from "./pages/JobApplication/Jobs";
+import TempPage from "./pages/TutoringSignUpForm/TempPage";
 // import Resources from './pages/Resources/Resources';
 import FAQ from "./pages/FAQ";
 import ComingSoon from "./pages/ComingSoon";
@@ -25,7 +26,7 @@ function App() {
     appId: "1:54891148698:web:3210c75c301af29beb3623",
     measurementId: "G-G91TY9E063"
   };
-  
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
@@ -35,8 +36,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/contact" element={<TempPage />} />
+        <Route path="/jobs" element={<ComingSoon />} />
         <Route path="/resources" element={<ComingSoon />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
